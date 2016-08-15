@@ -1,0 +1,16 @@
+<div>
+    <h1>{{repo.full_name}}</h1>
+    <h2>{{repo.description}}</h2>
+
+    <ul ng-repeat="contributor in contributors">
+        <li>
+            <div>{{contributor.login}}</div>
+            <div>
+                <img ng-src="{{contributor.avatar_url}}" width=100 height=100>
+            </div>
+        </li>
+    </ul>
+    <div>
+        <input type="button" value="Back" ng-click="back()" />
+    </div>
+</div>
